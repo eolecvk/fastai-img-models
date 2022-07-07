@@ -2,7 +2,7 @@
 
 We will walk through reproducing Fast.ai's Jeremy Howard [experiments on fine tuning vision models](https://www.kaggle.com/code/jhoward/the-best-vision-models-for-fine-tuning/notebook) on Lambda Cloud.
 
-For results, go directly to the `analysis.ipynb` notebook.
+For results, go directly to the `summary_fastai.ipynb` and `summary_lambda` notebooks.
 
 ## Setup
 

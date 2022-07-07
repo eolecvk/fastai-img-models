@@ -4,7 +4,7 @@ Reproducing Fast.ai's Jeremy Howard [experiments on fine tuning vision models](h
 
 ## Setup
 
-These are instructions to run a hyperparameter sweep using 'Weight and Biases' to fine-tune timm models for image classification on specific datasets.
+We will now go through setup instructions to run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTorch Image Models (timm)](https://github.com/rwightman/pytorch-image-models) for image classification on the [Kaggle Planet](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/data) and [IIT pets](https://www.robots.ox.ac.uk/~vgg/data/pets/) datasets.
 
 ### 1. Prerequisites
 
@@ -14,6 +14,12 @@ Once signed up, keep the following information for later steps:
   * a wandb API key (to be found in the settings page of your wandb account)
 
 ### 2. Code and dependencies
+
+Set variables for your wandb account name and for your API key:
+```
+ENTITY_NAME={your_wandb_account_name_here}
+WANDB_KEY={your_wandb_api_key_here}
+```
 
 Install conda
 ```
@@ -71,8 +77,7 @@ And run the sweep:
 wandb agent <SWEEP_ID>
 ```
 
-Check sweep; open your browser at
-https://wandb.ai/eolecvka/fastai_timm/sweeps/ygh90vj4
+Check sweep; open your browser at `https://wandb.ai/<ENTITY_NAME>/fastai_timm/sweeps/<SWEEP_ID>`
 
 
 ### Analysis

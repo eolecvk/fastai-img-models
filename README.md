@@ -84,9 +84,12 @@ wandb agent <SWEEP_ID>
 Check sweep; open your browser at `https://wandb.ai/<ENTITY_NAME>/fastai_timm/sweeps/<SWEEP_ID>`
 
 
+For convenience I added a copy of my results as a `.csv` here
+
+
 ### Analysis
 
-Visit the `analysis.ipynb` notebook.
+For the results analysis, open the `analysis.ipynb` notebook.
 
 
 ### Issues

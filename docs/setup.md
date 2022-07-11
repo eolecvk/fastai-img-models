@@ -7,7 +7,7 @@ Once signed up, keep the following information for later steps:
   * your wandb account name
   * a wandb API key (to be found in the settings page of your wandb account)
 
-## 2. Code and dependencies
+## 2. Dependencies
 
 In a terminal session, set bash variables for your wandb account name and for your API key:
 ```
@@ -32,11 +32,6 @@ wandb login
 Install fastai
 ```
 conda install -c fastchan fastai
-```
-
-Clone fastai timm fine-tuning repo
-```
-git clone https://github.com/tcapelle/fastai_timm.git
 ```
 
 Install torch image models

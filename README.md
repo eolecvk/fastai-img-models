@@ -6,7 +6,7 @@ We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTo
 
 * [Setup](./docs/setup.md)
 * [Hyperparameter sweep using Weight And Biases](./docs/sweep.md)
-* [Analysis](../summary_fastai)
+* [Analysis](../summary_fastai.ipynb)
   
 ---
 

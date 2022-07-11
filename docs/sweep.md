@@ -2,7 +2,7 @@
 
 ## 1. Create a sweep
 
-Edit sweep params in [`sweep.yaml`](./sweep.yaml).
+Edit sweep params in [`sweep.yaml`](../sweep.yaml).
 
 You can check all the possibilities for defining parameters [here](https://docs.wandb.ai/guides/sweeps/configuration).
 
@@ -19,6 +19,7 @@ Run the sweep:
 wandb agent <SWEEP_ID>
 ```
 
-Open your browser at `https://wandb.ai/<ENTITY_NAME>/fastai_timm/sweeps/<SWEEP_ID>` to monitor the sweep runs.
+## 3. Sweep logs
 
-For convenience I added a copy of my results as a `.csv` [here](https://gist.github.com/ee80a6df08591cf51924beb9b2ee3b7c) which I have generaled using [this script](../save_sweep_data.ipynb)
+Open your browser at `https://wandb.ai/<ENTITY_NAME>/fastai_timm/sweeps/<SWEEP_ID>` to monitor the sweep runs.  
+For convenience I added a copy of my results as a `.csv` [here](https://gist.github.com/ee80a6df08591cf51924beb9b2ee3b7c) which I have generaled using [this script](../save_sweep_data.ipynb).

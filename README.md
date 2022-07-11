@@ -1,24 +1,16 @@
 # The best vision models for fine-tuning
 
-We reproduce Fast.ai's Jeremy Howard [experiments on fine tuning vision models](https://www.kaggle.com/code/jhoward/the-best-vision-models-for-fine-tuning/notebook) on Lambda Cloud. To see experiment results, go directly to the `summary_fastai.ipynb` and `summary_lambda` notebooks.
+We reproduce Fast.ai's Jeremy Howard [experiments on fine tuning vision models](https://www.kaggle.com/code/jhoward/the-best-vision-models-for-fine-tuning/notebook) on Lambda Cloud.
  
 We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTorch Image Models (timm)](https://github.com/rwightman/pytorch-image-models) for image classification on the [Kaggle Planet](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/data) and [IIT pets](https://www.robots.ox.ac.uk/~vgg/data/pets/) datasets. The original scripts for fine-tuning can be found [here](https://github.com/tcapelle/fastai_timm). 
 
-Next:
-1. [Setup](./docs/setup.md)
-2. Hyperparameter sweep using Weight And Biases (./docs/sweep.md)
-3. Analysis
+
+[Setup](./docs/setup.md)
+[Hyperparameter sweep using Weight And Biases](./docs/sweep.md)
+[Analysis](../summary_fastai)
 
 
-
-
-
-### Analysis
-
-For the results analysis, open the `analysis.ipynb` notebook.
-
-
-### Issues
+**Issues**
 
 * Some models listed in `fastai_timm/sweep.yaml` are missing from `timm`, specifically all convnext models:
 ```

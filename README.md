@@ -12,7 +12,7 @@ We will now go through setup instructions to run a hyperparameter sweep using 'W
 
 ### 1. Prerequisites
 
-You will need to signup on wandb.
+You will need to [signup on wandb](https://app.wandb.ai/login?signup=true).
 Once signed up, keep the following information for later steps:
   * your wandb account name
   * a wandb API key (to be found in the settings page of your wandb account)
@@ -84,7 +84,7 @@ wandb agent <SWEEP_ID>
 Check sweep; open your browser at `https://wandb.ai/<ENTITY_NAME>/fastai_timm/sweeps/<SWEEP_ID>`
 
 
-For convenience I added a copy of my results as a `.csv` here
+For convenience I added a copy of my results as a `.csv` [here](https://gist.github.com/ee80a6df08591cf51924beb9b2ee3b7c)
 
 
 ### Analysis

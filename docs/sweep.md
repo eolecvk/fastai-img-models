@@ -2,8 +2,8 @@
 
 ## 1. Create a sweep
 
-Edit sweep params in [`sweep.yaml`](../sweep.yaml).
-
+Edit the sweep configuration file [`sweep.yaml`](../sweep.yaml) as needed.  
+One change that is required is setting the value for `entity` so that it matches the name of your wandb account.  
 You can check all the possibilities for defining parameters [here](https://docs.wandb.ai/guides/sweeps/configuration).
 
 Then, create sweep run:

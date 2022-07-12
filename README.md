@@ -7,6 +7,16 @@ We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTo
 * [Setup](./docs/setup.md)
 * [Hyperparameter sweep using Weight And Biases](./docs/sweep.md)
 * [Analysis](./summary_fastai.ipynb)
+
+
+![poc_wandb_analysis_2](https://user-images.githubusercontent.com/14501798/178616439-f68a1b07-6a06-4e79-9be3-62c731757981.png)
+
+
+![poc_wandb_analysis_2 png](https://user-images.githubusercontent.com/14501798/178616472-aa7e7a5f-60a6-455b-89eb-26418e9befe3.png)
+
+
+
+
   
 ---
 
@@ -19,5 +29,6 @@ timm.list_models('*convnext*')
 ```
 
 * The levit archs (levit_384, levit_256, levit_192, levit_128s) are failing
+
 
 ![failint archsa](https://user-images.githubusercontent.com/14501798/178615216-ea9acc33-ce83-42d1-8c4b-3b9120c32505.png)

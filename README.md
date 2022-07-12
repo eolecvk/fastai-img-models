@@ -17,3 +17,7 @@ We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTo
 timm.list_models('*convnext*')
 > []
 ```
+
+* The levit archs (levit_384, levit_256, levit_192, levit_128s) are failing
+
+![failint archsa](https://user-images.githubusercontent.com/14501798/178615216-ea9acc33-ce83-42d1-8c4b-3b9120c32505.png)

@@ -22,14 +22,11 @@ wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
 On a multi-GPU node start the wandb agent on every GPU available (in separate terminal sessions)
 ```
 CUDA_VISIBLE_DEVICES=0 wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
-```
-```
 CUDA_VISIBLE_DEVICES=1 wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
 ```
-
 Use `nvidia-smi` in a new terminal session to check that GPU are being utilized:
 
-
+![nvidia-smi](https://user-images.githubusercontent.com/14501798/178612648-b914e9a5-3aee-4cba-b947-53fb2ebf938d.png)
 
 ## 3. Sweep logs
 

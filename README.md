@@ -17,5 +17,3 @@ We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTo
 timm.list_models('*convnext*')
 > []
 ```
-
-* `nvidia-smi` not seeing GPU activity during training

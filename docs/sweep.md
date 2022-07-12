@@ -13,11 +13,23 @@ wandb sweep sweep.yaml
 
 ## 2. Run the sweep
 
-Run the sweep:
+On a single GPU node: 
 ```
 # you can paste the output of the previous command here
-wandb agent <SWEEP_ID>
+wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
 ```
+
+On a multi-GPU node start the wandb agent on every GPU available (in separate terminal sessions)
+```
+CUDA_VISIBLE_DEVICES=0 wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
+```
+```
+CUDA_VISIBLE_DEVICES=1 wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
+```
+
+Use `nvidia-smi` in a new terminal session to check that GPU are being utilized:
+
+
 
 ## 3. Sweep logs
 

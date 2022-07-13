@@ -25,7 +25,3 @@ conda install -y pip
 
 # Updates conda packages to the latest version
 conda update -y --all
-
-# Clone this repo and cd into it
-git clone https://github.com/eolecvk/fastai-img-models.git
-cd fastai-img-models

@@ -9,6 +9,22 @@ Once signed up, keep the following information for later steps:
 
 ## 2. Environment and code 
 
+
+Clone this repo and cd into it:
+```
+git clone https://github.com/eolecvk/fastai-img-models.git
+cd fastai-img-models
+```
+
+Run the setup script
+```
+./setup.sh
+```
+
+
+---
+
+
 Install conda
 ```
 # Install conda 
@@ -17,7 +33,6 @@ bash Miniconda3-py38_4.12.0-Linux-x86_64.sh -b -f
 eval "$(/home/ubuntu/miniconda3/bin/conda shell.bash hook)"
 export PATH="/home/ubuntu/miniconda3/bin:$PATH"
 conda init bash
-conda update -n base -c defaults conda
 
 # Create and activate conda venv
 conda create -y -n fastai_venv

@@ -26,7 +26,7 @@ Update conda to latest stable version
 conda update -n base -c defaults conda
 ```
 
-Create a new env
+Create and activate a new conda env `fastai_venv`
 ```
 conda create -n fastai_venv
 conda activate fastai_venv

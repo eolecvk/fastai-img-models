@@ -74,7 +74,7 @@ def train(config=config_defaults):
         learn = vision_learner(
                 dls, config.model_name, metrics=metrics, concat_pool=(config.pool=="concat"),
                 splitter=default_split if config.split_func=="default" else None,
-                cbs=WandbCallback(log=None, log_preds=False)).to_fp16()
+                cbs=WandbCallback(log=None, log_preds=False, log_evaluation_frequency=1)).to_fp16()
         ti = time.perf_counter()
         learn.fine_tune(config.epochs, config.learning_rate)
         wandb.summary["GPU_mem"] = get_gpu_mem(learn.dls.device)

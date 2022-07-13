@@ -18,6 +18,10 @@ We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTo
   
 ---
 
+**Notes**
+
+* Added arg `log_evaluation_frequency=1` to `WandbCallback` in order to log the model training perf at the end of each epoch.
+
 **Issues**
 
 * wandb does not seem to use GPU in sweeps by default; following command resulted in 0% GPU utilization:

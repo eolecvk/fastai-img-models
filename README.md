@@ -20,7 +20,7 @@ We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTo
 
 **Notes**
 
-* Added arg `log_evaluation_frequency=1` to `WandbCallback` in order to log the model training perf at the end of each epoch.
+* Added arg `log_preds_every_epoch=1` to `WandbCallback` in order to log the model training perf at the end of each epoch.
 
 **Issues**
 

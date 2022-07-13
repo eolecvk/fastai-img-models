@@ -52,10 +52,7 @@ conda install -y -c fastchan fastai
 Install torch image models (install with pip so it includes the complete model list) 
 ```
 conda install -y pip
-/anaconda/envs/fastai_venv/bin/pip install timm
-
-
-/home/ubuntu/miniconda/fastai_venv/bin/pip install timm
+/home/ubuntu/miniconda3/envs/fastai_venv/bin/pip install timm
 ```
 
 Install pyTorch with cuda support (try skipping this 2GB redundant...)

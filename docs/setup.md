@@ -1,14 +1,13 @@
 # Setup
 
-## 1. Weight And Biases account
+## Prerequisite
 
 You will need to [signup on wandb](https://app.wandb.ai/login?signup=true).
 Once signed up, keep the following information for later steps:
   * your wandb account name
   * a wandb API key (to be found in the settings page of your wandb account)
 
-## 2. Environment and code 
-
+## Environment
 
 Clone this repo and cd into it:
 ```
@@ -16,11 +15,16 @@ git clone https://github.com/eolecvk/fastai-img-models.git
 cd fastai-img-models
 ```
 
-Run the setup script
+Run the setup script; you will be prompted to enter your wandb API key during the installation.
 ```
+chmod +x setup.sh
 ./setup.sh
 ```
 
+Activate the conda environment
+```
+conda activate fastai_venv
+```
 
 ---
 
@@ -61,14 +65,6 @@ cd fastai-img-models
 ---
 
 Remove:
-
-
-Install pyTorch with cuda support (try skipping this 2GB redundant...)
-```
-conda install -y pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-```
-
-
 
 Set bash variables for your wandb account name and for your API key (to be found under https://wandb.ai/settings):
 ```

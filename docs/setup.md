@@ -65,8 +65,9 @@ Updates conda packages to the latest compatible version
 conda update -y --all
 ```
 
-Clone this repo
+Clone this repo and cd into it
 ```
 git clone https://github.com/eolecvk/fastai-img-models.git
+cd fastai-img-models
 ```
 

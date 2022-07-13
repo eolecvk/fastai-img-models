@@ -15,10 +15,18 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh
 bash Miniconda3-py38_4.12.0-Linux-x86_64.sh
 export PATH="/home/username/miniconda3/bin:$PATH"
 ```
+Close terminal and open new terminal.
 
-Close terminal and open new terminal:
+Set bash variables for your wandb account name and for your API key (to be found under https://wandb.ai/settings):
 ```
-conda update -n base conda
+ENTITY_NAME={your_wandb_account_name_here}
+WANDB_KEY={your_wandb_api_key_here}
+```
+
+Create a new env
+```
+conda create -n fastai_venv
+conda activate fastai_venv
 ```
 
 Install and login to wandb
@@ -27,20 +35,15 @@ conda install -c conda-forge wandb
 wandb login
 ```
 
-Set bash variables for your wandb account name and for your API key (to be found under https://wandb.ai/settings):
-```
-ENTITY_NAME={your_wandb_account_name_here}
-WANDB_KEY={your_wandb_api_key_here}
-```
-
 Install fastai
 ```
 conda install -c fastchan fastai
 ```
 
-Install torch image models **(missing some models, use pip install timm instead)**
+Install torch image models (install with pip so it includes the complete model list) 
 ```
-conda install -c conda-forge timm
+conda install pip
+/anaconda/envs/fastai_venv/bin/pip install timm
 ```
 
 Install pyTorch with cuda support
@@ -48,7 +51,7 @@ Install pyTorch with cuda support
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 
-Update all packages
+Updates conda packages to the latest compatible version
 ```
 conda update --all
 ```

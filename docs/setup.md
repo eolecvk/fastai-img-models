@@ -38,7 +38,7 @@ Install fastai
 conda install -c fastchan fastai
 ```
 
-Install torch image models
+Install torch image models **(missing some models, use pip install timm instead)**
 ```
 conda install -c conda-forge timm
 ```

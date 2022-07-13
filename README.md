@@ -18,4 +18,11 @@ timm.list_models('*convnext*')
 > []
 ```
 
+* In the setup step, confirm it is necessary to run step:
+
+Install pyTorch with cuda support
+```
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+```
+
 * `nvidia-smi` not seeing GPU activity during training

@@ -8,7 +8,7 @@ You can check all the possibilities for defining parameters [here](https://docs.
 
 Then, create sweep run:
 ```
-wandb sweep sweep.yaml
+wandb sweep configs/sweep.yaml
 ```
 
 ## 2. Run the sweep
@@ -21,5 +21,5 @@ wandb agent <SWEEP_ID>
 
 ## 3. Sweep logs
 
-Open your browser at `https://wandb.ai/<ENTITY_NAME>/fastai_timm/sweeps/<SWEEP_ID>` to monitor the sweep runs.  
+Open your browser at `https://wandb.ai/<ENTITY_NAME>/<PROJECT_NAME>/sweeps/<SWEEP_ID>` to monitor the sweep runs.  
 For convenience I added a copy of my results as a `.csv` [here](https://gist.github.com/ee80a6df08591cf51924beb9b2ee3b7c) which I have generaled using [this script](../save_sweep_data.ipynb).

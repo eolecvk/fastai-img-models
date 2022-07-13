@@ -1,0 +1,19 @@
+program: fine_tune.py
+entity: eolecvka
+method: grid
+parameters:
+    dataset: 
+        value: 'PETS'
+    learning_rate:
+        values: [0.002, 0.008]
+    model_name:
+        value: 'swin_base_patch4_window7_224_in22k'
+    pool:
+        values: ['concat','avg']
+    resize_method:
+        value: 'crop'
+    epochs:
+        values: [1, 5, 10, 15, 20]
+    num_experiments: 
+        values: [1,2,3]
+

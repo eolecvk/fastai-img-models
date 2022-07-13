@@ -13,6 +13,6 @@ parameters:
     resize_method:
         value: 'crop'
     epochs:
-        values: [1, 5, 10, 15, 20]
+        value: 20
     num_experiments: 
         values: [1,2,3]

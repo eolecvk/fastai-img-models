@@ -20,15 +20,13 @@ We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTo
 
 **Issues**
 
-* Some models listed in `fastai_timm/sweep.yaml` are missing from `timm`, specifically all convnext models:
+* wandb does not seem to use GPU in sweeps by default; following command resulted in 0% GPU utilization:
 ```
-timm.list_models('*convnext*')
-> []
+wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>`
 ```
 
-
-* The levit archs (levit_384, levit_256, levit_192, levit_128s) are failing
-
-
-![failint archsa](https://user-images.githubusercontent.com/14501798/178615216-ea9acc33-ce83-42d1-8c4b-3b9120c32505.png)
+Had to use Distributed Training (even in single GPU setting) with `CUDA_VISIBLE_DEVICES=0` to use GPU:
+```
+CUDA_VISIBLE_DEVICES=0 wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
+```
 

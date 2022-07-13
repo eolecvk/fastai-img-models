@@ -15,15 +15,16 @@ git clone https://github.com/eolecvk/fastai-img-models.git
 cd fastai-img-models
 ```
 
-Run the setup script; you will be prompted to enter your wandb API key during the installation.
+Run the setup script to create a conda environment; you will be prompted to enter your wandb API key during the installation.
 ```
 chmod +x setup.sh
 ./setup.sh
 ```
 
-Activate the conda environment
+Activate the new conda environment
 ```
 export PATH="/home/ubuntu/miniconda3/bin:$PATH"
+eval "$(conda shell.bash hook)"
 conda activate fastai_venv
 ```
 

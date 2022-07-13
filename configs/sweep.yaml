@@ -8,10 +8,10 @@ parameters:
         values: [0.002, 0.008]
     model_name:
         values: [
-            #'convnext_base',
-            #'convnext_small',
-            #'convnext_tiny',
-            #'convnext_tiny_hnf',
+            'convnext_base',
+            'convnext_small',
+            'convnext_tiny',
+            'convnext_tiny_hnf',
             'efficientnet_b0',
             'efficientnet_es',
             'efficientnet_es_pruned',

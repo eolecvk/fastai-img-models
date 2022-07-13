@@ -30,5 +30,7 @@ Use `nvidia-smi` in a new terminal session to check that GPU are being utilized:
 
 ## 3. Sweep logs
 
+
 Open your browser at `https://wandb.ai/<WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>` to monitor the sweep runs.  
 For convenience I added a copy of my results as a `.csv` [here](https://gist.github.com/ee80a6df08591cf51924beb9b2ee3b7c) which I have generaled using [this script](../save_sweep_data.ipynb).
+

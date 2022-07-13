@@ -8,7 +8,7 @@ You can check all the possibilities for defining parameters [here](https://docs.
 
 Then, create sweep run:
 ```
-wandb sweep sweep.yaml
+wandb sweep configs/sweep.yaml
 ```
 
 ## 2. Run the sweep

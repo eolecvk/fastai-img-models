@@ -77,7 +77,7 @@ def train(config=config_defaults):
                 cbs=[
                     EarlyStoppingCallback(monitor='accuracy', min_delta=0.01, patience=2),
                     WandbCallback(log=None, log_preds=False, log_preds_every_epoch=True)
-                    ).to_fp16()
+                ]).to_fp16()
         ti = time.perf_counter()
         learn.fine_tune(config.epochs, config.learning_rate)
         wandb.summary["GPU_mem"] = get_gpu_mem(learn.dls.device)

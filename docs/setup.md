@@ -21,13 +21,9 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-Activate the new conda environment
+Activate venv?
 ```
-export PATH="/home/ubuntu/miniconda3/bin:$PATH"
-eval "$(conda shell.bash hook)"
-conda activate fastai_venv
 ```
-
 ---
 
 Remove:

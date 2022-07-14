@@ -15,8 +15,8 @@ wandb sweep configs/sweep.yaml
 
 Start the wandb agent on every GPU available (in separate terminal sessions)
 ```
-CUDA_VISIBLE_DEVICES=0 wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
-CUDA_VISIBLE_DEVICES=1 wandb agent <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
+CUDA_VISIBLE_DEVICES=0 wandb agent --count=300 <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
+CUDA_VISIBLE_DEVICES=1 wandb agent --count=300  <WANDB_ACCOUNT_NAME>/<WANDB_PROJECT_NAME>/<SWEEP_ID>
 ```
 Use `nvidia-smi` in a new terminal session to check that GPU are being utilized:
 

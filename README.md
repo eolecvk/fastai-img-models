@@ -5,8 +5,8 @@ We reproduce Fast.ai's Jeremy Howard [experiments on fine tuning vision models](
 We will run a hyperparameter sweep using 'Weight and Biases' to fine-tune  [PyTorch Image Models (timm)](https://github.com/rwightman/pytorch-image-models) for image classification on the [Kaggle Planet](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/data) and [IIT pets](https://www.robots.ox.ac.uk/~vgg/data/pets/) datasets. The original scripts for fine-tuning can be found [here](https://github.com/tcapelle/fastai_timm). 
 
 * [Setup](./docs/setup.md)
-* [Hyperparameter sweep using Weight And Biases](./docs/sweep.md)
-* [Analysis](./summary_fastai.ipynb)
+* [Reproducing experiments on models fine tuning](./docs/sweep.md)
+* [Cost performance analysis](./summary_fastai.ipynb)
 
 
 ![poc_wandb_analysis_2](https://user-images.githubusercontent.com/14501798/178616439-f68a1b07-6a06-4e79-9be3-62c731757981.png)

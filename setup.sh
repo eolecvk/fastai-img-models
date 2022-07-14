@@ -7,12 +7,9 @@ source .venv/bin/activate
 # Update pip
 pip install --upgrade pip
 
-# Install fastai
-pip install fastai
-
-# Reinstall torch (fixes CUDA issue)
-pip uninstall -y torch
+# Install fastai with CUDA support
 pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
+pip install fastai
 
 # Install and login to wandb
 pip install wandb

@@ -1,9 +1,9 @@
 program: fine_tune.py
 entity: eolecvka
 method: random
-count: 500
-epochs: 200
 parameters:
+    epochs: 200
+    count: 400
     dataset: 
         value: 'PETS'
     learning_rate:

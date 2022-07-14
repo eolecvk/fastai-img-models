@@ -11,7 +11,7 @@ pip install --upgrade pip
 pip install fastai
 
 # Reinstall torch (fixes CUDA issue)
-pip uninstall torch
+pip uninstall -y torch
 pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
 
 # Install and login to wandb

@@ -21,8 +21,9 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-Activate venv?
+Activate venv
 ```
+source .venv/bin/activate
 ```
 ---
 

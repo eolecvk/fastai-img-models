@@ -4,8 +4,6 @@ method: random
 parameters:
     epochs:
         value: 200
-    count:
-        value: 400
     dataset: 
         value: 'PETS'
     learning_rate:

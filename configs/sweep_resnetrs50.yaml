@@ -1,0 +1,20 @@
+program: fine_tune.py
+entity: eolecvka
+method: random
+parameters:
+    epochs:
+        value: 50
+    dataset: 
+        value: 'PETS'
+    learning_rate:
+        values: [0.002, 0.008]
+    batch_size:
+        values: [16, 32, 64]
+    model_name:
+        value: 'resnetrs50'
+    pool:
+        values: ['concat','avg']
+    resize_method:
+        value: 'crop'
+    num_experiments: 
+        value: 5
